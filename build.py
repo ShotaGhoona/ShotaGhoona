@@ -71,7 +71,7 @@ def header(t):
 
   <text class="kicker" x="40" y="64">PRODUCT MANAGER — ARCHAIVE / STARUP</text>
   <text class="name" x="36" y="150">Shota Yamashita</text>
-  <text class="ja" x="40" y="186">山下 翔太</text>
+  <text class="ja" x="40" y="186">山下 翔大</text>
 
   <line class="rule" x1="40" y1="222" x2="{W-40}" y2="222"/>
 
