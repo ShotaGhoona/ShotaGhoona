@@ -20,32 +20,19 @@
 
 <br/>
 
-### Selected Work
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/works-dark.svg">
+  <img alt="Selected Work" src="./assets/works-light.svg" width="100%">
+</picture>
 
-| | |
-|:--|:--|
-| **ARCHAIVE** | 製造業向け DX プラットフォームを、フロントエンドからプロダクトマネジメントまで作ってきました |
-| **[STARUP Corporate Site](https://starup-hp.vercel.app)** | Three.js と GSAP で動く、会社のコーポレートサイト。制作から運用まで |
-| **GhoonaCamp** | 朝活を習慣にするアプリ。称号やランキングまで一から設計 |
-| **Real-time Voting Game** | 50 人規模のイベントのための、チーム対抗リアルタイム投票ゲーム |
-| **Heat & Moisture Simulation** | 卒業研究。建物の熱と水分の同時移動を Julia で計算し、75 パターンを並列に回しました |
-| **[Portfolio](https://portfolio-eight-olive-24.vercel.app)** | Three.js とシェーダーで組んだ、雑誌のようなポートフォリオ |
+<p align="right"><sub><a href="https://starup-hp.vercel.app">STARUP Corporate Site ↗</a> &nbsp;·&nbsp; <a href="https://portfolio-eight-olive-24.vercel.app">Portfolio ↗</a></sub></p>
 
 <br/>
 
-### Toolkit
-
-<sub>PRODUCT</sub><br/>
-Product Management &nbsp;·&nbsp; Requirements &nbsp;·&nbsp; UX Design &nbsp;·&nbsp; Roadmapping &nbsp;·&nbsp; Spec-driven Development
-
-<sub>ENGINEERING</sub><br/>
-TypeScript &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; React &nbsp;·&nbsp; Three.js &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; Docker &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Vercel &nbsp;·&nbsp; Supabase
-
-<sub>AI &amp; RESEARCH</sub><br/>
-Claude Code &nbsp;·&nbsp; MCP &nbsp;·&nbsp; Julia &nbsp;·&nbsp; Physical Simulation
-
-<sub>DESIGN</sub><br/>
-Figma &nbsp;·&nbsp; Illustrator
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolkit-dark.svg">
+  <img alt="Toolkit" src="./assets/toolkit-light.svg" width="100%">
+</picture>
 
 <br/>
 

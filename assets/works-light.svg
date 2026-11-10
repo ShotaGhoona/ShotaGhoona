@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="488" viewBox="0 0 840 488">
+  <style>
+    .bg { fill:#ffffff; }
+    .kicker { font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif; letter-spacing:.32em; fill:#9a6700; }
+    .count { font:400 12.5px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; fill:#656d76; }
+    .r { opacity:0; animation:in .6s cubic-bezier(.2,.7,.2,1) forwards; }
+    .hl { stroke:#d0d7de; stroke-dasharray:760; stroke-dashoffset:760; animation:draw .9s ease-out forwards; }
+    .no { font:400 13px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; fill:#9a6700; }
+    .tt { font:400 23px 'Iowan Old Style','Palatino Linotype','Hiragino Mincho ProN','Yu Mincho',Georgia,serif; fill:#1f2328; letter-spacing:-.005em; }
+    .ds { font:400 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif; fill:#656d76; }
+    .tg { font:400 11px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; fill:#656d76; letter-spacing:.06em; }
+    .yr { font:400 13px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace; fill:#1f2328; }
+    .ar { stroke:#656d76; stroke-width:1.2; fill:none; }
+    .end { stroke:#d0d7de; }
+    @keyframes in { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+    @keyframes draw { to { stroke-dashoffset:0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation-duration:0s !important; animation-delay:0s !important; } }
+  </style>
+  <rect class="bg" width="840" height="488" rx="12"/>
+  <text class="kicker" x="40" y="44">SELECTED WORK</text>
+  <text class="count" x="800" y="44" text-anchor="end">(06)</text>
+  
+  <g class="r" style="animation-delay:0.20s">
+    <line class="hl" x1="40" y1="76" x2="800" y2="76" style="animation-delay:0.20s"/>
+    <text class="no" x="40" y="114">01</text>
+    <text class="tt" x="84" y="106">ARCHAIVE</text>
+    <text class="ds" x="84" y="126">製造業向け DX プラットフォームを、フロントからプロダクトまで</text>
+    <text class="tg" x="700" y="106" text-anchor="end">Product · PdM</text>
+    <text class="yr" x="800" y="106" text-anchor="end">2024—</text>
+    <path class="ar" d="M792 120 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <g class="r" style="animation-delay:0.36s">
+    <line class="hl" x1="40" y1="142" x2="800" y2="142" style="animation-delay:0.36s"/>
+    <text class="no" x="40" y="180">02</text>
+    <text class="tt" x="84" y="172">STARUP Corporate Site</text>
+    <text class="ds" x="84" y="192">Three.js と GSAP で動く、会社のコーポレートサイト</text>
+    <text class="tg" x="700" y="172" text-anchor="end">Web · 3D</text>
+    <text class="yr" x="800" y="172" text-anchor="end">2025</text>
+    <path class="ar" d="M792 186 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <g class="r" style="animation-delay:0.52s">
+    <line class="hl" x1="40" y1="208" x2="800" y2="208" style="animation-delay:0.52s"/>
+    <text class="no" x="40" y="246">03</text>
+    <text class="tt" x="84" y="238">GhoonaCamp</text>
+    <text class="ds" x="84" y="258">朝活を習慣にするアプリ。称号やランキングまで一から設計</text>
+    <text class="tg" x="700" y="238" text-anchor="end">App · Community</text>
+    <text class="yr" x="800" y="238" text-anchor="end">2025</text>
+    <path class="ar" d="M792 252 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <g class="r" style="animation-delay:0.68s">
+    <line class="hl" x1="40" y1="274" x2="800" y2="274" style="animation-delay:0.68s"/>
+    <text class="no" x="40" y="312">04</text>
+    <text class="tt" x="84" y="304">Real-time Voting Game</text>
+    <text class="ds" x="84" y="324">50 人規模のイベントのための、チーム対抗の投票ゲーム</text>
+    <text class="tg" x="700" y="304" text-anchor="end">Event · Realtime</text>
+    <text class="yr" x="800" y="304" text-anchor="end">2025</text>
+    <path class="ar" d="M792 318 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <g class="r" style="animation-delay:0.84s">
+    <line class="hl" x1="40" y1="340" x2="800" y2="340" style="animation-delay:0.84s"/>
+    <text class="no" x="40" y="378">05</text>
+    <text class="tt" x="84" y="370">Heat &amp; Moisture Simulation</text>
+    <text class="ds" x="84" y="390">卒業研究。建物の熱と水分の移動を 75 通り並列に計算</text>
+    <text class="tg" x="700" y="370" text-anchor="end">Research · Julia</text>
+    <text class="yr" x="800" y="370" text-anchor="end">2025</text>
+    <path class="ar" d="M792 384 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <g class="r" style="animation-delay:1.00s">
+    <line class="hl" x1="40" y1="406" x2="800" y2="406" style="animation-delay:1.00s"/>
+    <text class="no" x="40" y="444">06</text>
+    <text class="tt" x="84" y="436">Portfolio</text>
+    <text class="ds" x="84" y="456">Three.js とシェーダーで組んだ、雑誌のようなポートフォリオ</text>
+    <text class="tg" x="700" y="436" text-anchor="end">Web · Design</text>
+    <text class="yr" x="800" y="436" text-anchor="end">2025</text>
+    <path class="ar" d="M792 450 l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>
+  <line class="end" x1="40" y1="472" x2="800" y2="472"/>
+</svg>

@@ -149,7 +149,135 @@ def timeline(t):
 </svg>'''
 
 
+# ---------------------------------------------------------------- selected work (magazine index)
+WORKS = [
+    ("ARCHAIVE", "製造業向け DX プラットフォームを、フロントからプロダクトまで", "Product · PdM", "2024—"),
+    ("STARUP Corporate Site", "Three.js と GSAP で動く、会社のコーポレートサイト", "Web · 3D", "2025"),
+    ("GhoonaCamp", "朝活を習慣にするアプリ。称号やランキングまで一から設計", "App · Community", "2025"),
+    ("Real-time Voting Game", "50 人規模のイベントのための、チーム対抗の投票ゲーム", "Event · Realtime", "2025"),
+    ("Heat & Moisture Simulation", "卒業研究。建物の熱と水分の移動を 75 通り並列に計算", "Research · Julia", "2025"),
+    ("Portfolio", "Three.js とシェーダーで組んだ、雑誌のようなポートフォリオ", "Web · Design", "2025"),
+]
+
+
+def works(t):
+    W, top, row = 840, 76, 66
+    H = top + row * len(WORKS) + 16
+    rows = []
+    for i, (title, desc, tag, year) in enumerate(WORKS):
+        y = top + i * row
+        d = 0.2 + i * 0.16
+        rows.append(f'''
+  <g class="r" style="animation-delay:{d:.2f}s">
+    <line class="hl" x1="40" y1="{y}" x2="{W-40}" y2="{y}" style="animation-delay:{d:.2f}s"/>
+    <text class="no" x="40" y="{y+38}">{i+1:02d}</text>
+    <text class="tt" x="84" y="{y+30}">{title}</text>
+    <text class="ds" x="84" y="{y+50}">{desc}</text>
+    <text class="tg" x="{W-140}" y="{y+30}" text-anchor="end">{tag}</text>
+    <text class="yr" x="{W-40}" y="{y+30}" text-anchor="end">{year}</text>
+    <path class="ar" d="M{W-48} {y+44} l8 0 m-4 -4 l4 4 l-4 4"/>
+  </g>''')
+    yb = top + row * len(WORKS)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
+  <style>
+    .bg {{ fill:{t['bg']}; }}
+    .kicker {{ font:600 11px {SANS}; letter-spacing:.32em; fill:{t['accent']}; }}
+    .count {{ font:400 12.5px {MONO}; fill:{t['sub']}; }}
+    .r {{ opacity:0; animation:in .6s cubic-bezier(.2,.7,.2,1) forwards; }}
+    .hl {{ stroke:{t['line']}; stroke-dasharray:760; stroke-dashoffset:760; animation:draw .9s ease-out forwards; }}
+    .no {{ font:400 13px {MONO}; fill:{t['accent']}; }}
+    .tt {{ font:400 23px {SERIF}; fill:{t['fg']}; letter-spacing:-.005em; }}
+    .ds {{ font:400 12.5px {SANS}; fill:{t['sub']}; }}
+    .tg {{ font:400 11px {MONO}; fill:{t['sub']}; letter-spacing:.06em; }}
+    .yr {{ font:400 13px {MONO}; fill:{t['fg']}; }}
+    .ar {{ stroke:{t['sub']}; stroke-width:1.2; fill:none; }}
+    .end {{ stroke:{t['line']}; }}
+    @keyframes in {{ from {{ opacity:0; transform:translateY(8px); }} to {{ opacity:1; transform:none; }} }}
+    @keyframes draw {{ to {{ stroke-dashoffset:0; }} }}
+    @media (prefers-reduced-motion: reduce) {{ * {{ animation-duration:0s !important; animation-delay:0s !important; }} }}
+  </style>
+  <rect class="bg" width="{W}" height="{H}" rx="12"/>
+  <text class="kicker" x="40" y="44">SELECTED WORK</text>
+  <text class="count" x="{W-40}" y="44" text-anchor="end">({len(WORKS):02d})</text>
+  {"".join(rows)}
+  <line class="end" x1="40" y1="{yb}" x2="{W-40}" y2="{yb}"/>
+</svg>'''
+
+
+# ---------------------------------------------------------------- toolkit (periodic table)
+GROUPS = {
+    "Product": ("#a371f7", "#8250df"),
+    "Engineering": ("#58a6ff", "#0969da"),
+    "AI & Research": ("#e3b341", "#9a6700"),
+    "Design": ("#f778ba", "#bf3989"),
+}
+ELEMENTS = [
+    ("Pm", "Product Mgmt", "Product"), ("Rq", "Requirements", "Product"), ("Ux", "UX Design", "Product"),
+    ("Rm", "Roadmapping", "Product"), ("Sd", "Spec-driven", "Product"),
+    ("Ts", "TypeScript", "Engineering"), ("Nx", "Next.js", "Engineering"), ("Re", "React", "Engineering"),
+    ("Th", "Three.js", "Engineering"), ("Fa", "FastAPI", "Engineering"),
+    ("Dk", "Docker", "Engineering"), ("Aw", "AWS", "Engineering"), ("Vc", "Vercel", "Engineering"),
+    ("Sb", "Supabase", "Engineering"),
+    ("Cc", "Claude Code", "AI & Research"), ("Mc", "MCP", "AI & Research"), ("Jl", "Julia", "AI & Research"),
+    ("Si", "Simulation", "AI & Research"),
+    ("Fg", "Figma", "Design"), ("Il", "Illustrator", "Design"),
+]
+
+
+def toolkit(t, dark):
+    W, cols, tw, th, gap = 840, 10, 70, 78, 6
+    x0, y0 = 40, 70
+    H = y0 + 2 * (th + gap) + 52
+    tiles = []
+    for i, (sym, name, g) in enumerate(ELEMENTS):
+        c, r = i % cols, i // cols
+        x, y = x0 + c * (tw + gap), y0 + r * (th + gap)
+        col = GROUPS[g][0 if dark else 1]
+        d = 0.15 + (c + r * 2) * 0.07
+        tiles.append(f'''
+  <g class="e" style="animation-delay:{d:.2f}s">
+    <rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="6" class="tile" style="stroke:{col}"/>
+    <rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="6" fill="{col}" opacity=".08"/>
+    <text x="{x+7}" y="{y+15}" class="n">{i+1}</text>
+    <text x="{x+tw/2}" y="{y+48}" class="s" text-anchor="middle" style="fill:{col}">{sym}</text>
+    <text x="{x+tw/2}" y="{y+67}" class="nm" text-anchor="middle">{name}</text>
+  </g>''')
+    legend, lx = [], x0
+    for g, cs in GROUPS.items():
+        legend.append(f'<rect x="{lx}" y="{H-30}" width="8" height="8" rx="2" fill="{cs[0 if dark else 1]}"/>'
+                      f'<text x="{lx+14}" y="{H-22}" class="lg">{g}</text>')
+        lx += 30 + len(g) * 7.2
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
+  <style>
+    .bg {{ fill:{t['bg']}; }}
+    .kicker {{ font:600 11px {SANS}; letter-spacing:.32em; fill:{t['accent']}; }}
+    .cap {{ font:400 12.5px {MONO}; fill:{t['sub']}; }}
+    .tile {{ fill:none; stroke-width:1; stroke-opacity:.55; }}
+    .n {{ font:400 9.5px {MONO}; fill:{t['sub']}; }}
+    .s {{ font:400 28px {SERIF}; }}
+    .nm {{ font:400 9px {SANS}; fill:{t['sub']}; }}
+    .lg {{ font:400 11px {SANS}; fill:{t['sub']}; }}
+    .e {{ opacity:0; transform-box:fill-box; transform-origin:center;
+          animation:pop .5s cubic-bezier(.3,1.4,.5,1) forwards; }}
+    @keyframes pop {{ from {{ opacity:0; transform:scale(.85); }} to {{ opacity:1; transform:none; }} }}
+    @media (prefers-reduced-motion: reduce) {{ * {{ animation-duration:0s !important; animation-delay:0s !important; }} }}
+  </style>
+  <rect class="bg" width="{W}" height="{H}" rx="12"/>
+  <text class="kicker" x="40" y="44">TOOLKIT</text>
+  <text class="cap" x="{W-40}" y="44" text-anchor="end">the periodic table of shota</text>
+  {"".join(tiles)}
+  {"".join(legend)}
+</svg>'''
+
+
+def esc(svg):
+    import re
+    return re.sub(r"&(?![a-zA-Z#]+;)", "&amp;", svg)
+
+
 for name, t in THEMES.items():
     (OUT / f"header-{name}.svg").write_text(header(t), encoding="utf-8")
     (OUT / f"timeline-{name}.svg").write_text(timeline(t), encoding="utf-8")
+    (OUT / f"works-{name}.svg").write_text(esc(works(t)), encoding="utf-8")
+    (OUT / f"toolkit-{name}.svg").write_text(esc(toolkit(t, name == "dark")), encoding="utf-8")
 print("written:", sorted(p.name for p in OUT.iterdir()))
