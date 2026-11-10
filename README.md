@@ -1,145 +1,83 @@
-<!-- ==================================================== -->
-<!--  Shota Yamashita — GitHub Profile README              -->
-<!--  ファイルを ShotaGhoona/ShotaGhoona リポジトリ直下の  -->
-<!--  README.md として配置してください                     -->
-<!-- ==================================================== -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Shota+Yamashita+%F0%9F%91%8B;Founder+%40+Ghoona+Inc.;Entrepreneur+%7C+Full-Stack+AI+Engineer;Design-Engineer+from+Kyoto%2C+Japan" alt="typing" />
+# Shota Yamashita
+
+**Product Manager & Builder** — 製造業の現場・エンジニア・経営のあいだを訳して、プロダクトにする人。
+
+[Portfolio](https://portfolio-eight-olive-24.vercel.app) · Kyoto, Japan
 
 </div>
 
 ---
 
-## 🚀 About Me
+## About
 
 ```ts
 const shota = {
-  name: "Shota Yamashita / 山下 翔太",
-  role: "Founder @ Ghoona Inc.",
-  based: "Kyoto, Japan 🇯🇵",
-  currentlyBuilding: "ARCHAIVE — Manufacturing DX SaaS",
-  background: ["Kyoto Univ. (Architecture)", "UI/UX → AI → Startup"],
-  philosophy: "眠らぬうさぎアルゴリズム — The Sleepless Rabbit",
+  role: "Product Manager of ARCHAIVE @ STARUP",
+  product: "ARCHAIVE — 製造業向け DX プラットフォーム",
+  education: "京都大学 工学部 建築学科（建築環境工学）",
+  background: "建築 → UI/UX → AI → Product",
+  workingWith: "Claude Code を相棒に、自作スキルで仕事を仕組みにする",
+  side: "Ghoona — 朝活アプリやキャンプ運営ツールをつくる個人の旗印",
 };
 ```
 
-デザイン × エンジニアリング × AI の交点で、**人の創造性を増幅するプロダクト**を作っています。
-建築学科で図面を引いていた手で、今はソフトウェアのアーキテクチャを描いています。
+研究の厳密さと、プロダクトのスピードと、ものづくりの遊び心を一緒に持っていたい。
+「どんな体験を届けたいか」と「どこまでやるか」を先に決めてから手を動かします。
 
 ---
 
-## 🎯 Currently
+## Now
 
-- 🏭 **ARCHAIVE Quote** — 製造業向け見積もり SaaS のフロントエンド実装（Next.js 15 + TS + FSD）
-- 🌱 **Ghoona Inc.** — AI × 人の創造性を軸にしたプロダクト開発
-- 🎨 デザイン駆動の Next.js / TypeScript アーキテクチャ設計
-
----
-
-## 🛠️ Tech Stack
-
-**Frontend**
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
-![shadcn/ui](https://img.shields.io/badge/-shadcn%2Fui-000000?style=flat-square&logo=shadcnui)
-![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=three.js)
-![GSAP](https://img.shields.io/badge/-GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black)
-
-**Backend**
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-
-**Infra & Tools**
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS CDK](https://img.shields.io/badge/-AWS_CDK-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-
-**Design**
-![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Illustrator](https://img.shields.io/badge/-Illustrator-FF9A00?style=flat-square&logo=adobe-illustrator&logoColor=white)
+- 🏭 **ARCHAIVE** — 図面・BOM・見積・発注実績を一元管理して、AI エージェントで社内の情報を探せる製造業向けプラットフォーム。プロダクトマネージャーとして、ロードマップ・要件定義・UX を担当
+- 🌐 **STARUP のコーポレートサイト** — 会社の HP も自分で作って運用中
+- 🧭 **プロダクトの回し方** — Epic を頂点にした 2 層ロードマップ、仕様駆動開発、隔週リリースのバグチェック会
+- 🤖 **AI で仕事を仕組みに** — Claude Code の自作スキル約 20 個と MCP で、議事録 → CRM、要望のトリアージ、リリースチェックリストなどを半自動化
 
 ---
 
-## 🌟 Featured Projects
+## Things I've Built
 
-### 🏭 ARCHAIVE — Manufacturing DX Platform
-製造業向けの図面管理・見積もり・AI エージェントを統合したデモアプリ。<br/>
-`Next.js 15` `TypeScript` `FSD Architecture` `OpenAI API`
-<br/>🔗 [Live](https://archaive-ai-agent-demo.vercel.app) · [Repo](https://github.com/ShotaGhoona/archaive-ai-agent-demo)
-
-### 🛍️ Acrique — Custom Acrylic E-Commerce
-B2B / B2C 両対応のアクリル製品オーダーメイド EC サイト。<br/>
-`Next.js 15` `FastAPI` `PostgreSQL` `JWT (RS256)` `Docker`
-<br/>🔗 [Repo](https://github.com/ShotaGhoona/acrique-v1)
-
-### 📑 AI Solution Template
-エンタープライズグレードのフルスタックテンプレート（受託開発の立ち上げ基盤）。<br/>
-`Next.js 15` `FastAPI` `AWS CDK` `GitHub Actions OIDC`
-<br/>🔗 [Repo](https://github.com/ShotaGhoona/docs-management-system)
-
-### 🌅 Ghoona Camp — Morning Activity Community
-朝活コミュニティ SaaS。AI による人生設計・Discord 連携・ティアシステム。<br/>
-`Next.js 15` `FastAPI` `PostgreSQL` `OpenAI` `Supabase`
-
-### 🌐 STAR UP Corporate Site — 3D Web Experience
-Three.js + GSAP によるイマーシブ 3D 企業サイト。<br/>
-`Next.js 15` `Three.js` `GSAP` `Custom Shaders` `Notion`
-<br/>🔗 [Live](https://starup-hp.vercel.app) · [Repo](https://github.com/ShotaGhoona/starup-hp)
-
-### 🎨 Portfolio — Git-as-Identity
-開発者アイデンティティを Git メタファで表現したポートフォリオ。JA / EN、Light / Dark 対応。<br/>
-`Next.js 15` `TypeScript` `i18n` `Theming System`
-<br/>🔗 [Live](https://portfolio-eight-olive-24.vercel.app) · [Repo](https://github.com/ShotaGhoona/portfolio)
+| | |
+|---|---|
+| 🧩 **ARCHAIVE の UX 再設計** | 乱立していたアップロード口の整理、権限管理（RBAC）UI の作り直し、類似図面検索のマスターディテール UI |
+| 🌐 **[STARUP Corporate Site](https://starup-hp.vercel.app)** | Three.js と GSAP で作った、3D で動く会社 HP |
+| 🌅 **GhoonaCamp** | 朝活を習慣にするアプリ。ニューモーフィズム、テーマ、称号・ランキングまで一から設計 |
+| 🎮 **リアルタイム投票ゲーム** | 50 人規模のイベント用に作ったチーム対抗ゲーム（Next.js / Vercel） |
+| 🌡️ **熱水分シミュレーション** | 卒業研究。建物の熱と水分の同時移動を Julia で計算し、75 パターンを 18 コア機で並列に回した |
+| 🎨 **Portfolio** | Three.js・シェーダー背景・雑誌風レイアウトのポートフォリオサイト |
 
 ---
 
-## 📊 GitHub Stats
+## Stack
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ShotaGhoona&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="170" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShotaGhoona&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="170" />
-
-<img src="https://streak-stats.demolab.com?user=ShotaGhoona&theme=tokyonight&hide_border=true" height="170" />
-
-</div>
+**Product** — PdM · 要件定義 · UX デザイン · ロードマップ · 仕様駆動開発<br/>
+**Frontend** — TypeScript · Next.js · React · shadcn/ui · Storybook · Three.js<br/>
+**Backend / Infra** — FastAPI · Docker · AWS · Vercel · Supabase · Google Apps Script<br/>
+**Research** — Julia · 物理シミュレーション · 並列バッチ計算<br/>
+**AI** — Claude Code（Skills / Hooks / Subagents）· MCP<br/>
+**Design** — Figma · Illustrator
 
 ---
 
-## 🧭 Journey
+## Journey
 
 ```diff
-* 2025-01  Launch Ghoona Inc. — Where AI meets human creativity
-* 2024-11  Manufacturing SaaS — PdM @ STAR UP
-* 2024-09  AI Agent Dev Intern — SNS Marketing Co.
-* 2024-04  Exchange in India 🇮🇳 — 9,000km backpacking across the subcontinent
-* 2023-07  Design Intern @ Tech startup
-+ 2023-06  The Great Pivot — ChatGPT → AI Engineering
-* 2020-04  Kyoto University, Faculty of Engineering (Architecture)
-* 2001-09  Born in Sakai, Osaka
++ 2026-06  ARCHAIVE のプロダクトマネージャーに
+* 2026-01  フルスタックで PoC を量産
+* 2025-10  ARCHAIVE Quote のフロントエンドを担当
+* 2024-11  STARUP に参加
+* 2024-04  インドに交換留学。9,000km をバックパックで
+* 2024-02  1,200 人規模の学生フェスを 40 人で運営
+* 2023-06  ChatGPT に出会って、デザインから AI エンジニアリングへ
+* 2020-04  京都大学 工学部 建築学科に入学
 ```
 
 ---
 
-## 📫 Contact
-
-- 🌐 Portfolio — [portfolio-eight-olive-24.vercel.app](https://portfolio-eight-olive-24.vercel.app)
-- 🏢 Work — Ghoona Inc.
-- 📧 Email — <shota.yamashita@starup01.jp>
-
----
-
 <div align="center">
 
-_「眠らぬうさぎには誰も勝てない。毎日、想像を超える創造を。」_<br/>
-<sub>— The Sleepless Rabbit Algorithm</sub>
+_眠らぬうさぎには誰も勝てない。_
 
 </div>
