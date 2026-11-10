@@ -3,7 +3,7 @@
   <img alt="Shota Yamashita — Product Manager of ARCHAIVE at STARUP" src="./assets/header-light.svg" width="100%">
 </picture>
 
-<p align="right"><sub><a href="https://portfolio-eight-olive-24.vercel.app">Portfolio ↗</a></sub></p>
+<p align="right"><sub><a href="https://shotaghoona.com">shotaghoona.com ↗</a></sub></p>
 
 製造業の現場と、エンジニアと、経営のあいだを訳して、プロダクトにしています。<br/>
 研究の厳密さと、プロダクトのスピードと、ものづくりの遊び心を、ひとつの手の中に。
@@ -25,7 +25,7 @@
   <img alt="Selected Work" src="./assets/works-light.svg" width="100%">
 </picture>
 
-<p align="right"><sub><a href="https://starup-hp.vercel.app">STARUP Corporate Site ↗</a> &nbsp;·&nbsp; <a href="https://portfolio-eight-olive-24.vercel.app">Portfolio ↗</a></sub></p>
+<p align="right"><sub><a href="https://starup-hp.vercel.app">STARUP Corporate Site ↗</a> &nbsp;·&nbsp; <a href="https://shotaghoona.com">shotaghoona.com ↗</a></sub></p>
 
 <br/>
 
